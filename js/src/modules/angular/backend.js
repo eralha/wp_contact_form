@@ -44,12 +44,23 @@ var app = angular.module('app', ['formVals']);
 		}
 
 		$scope.deleteContact = function(id){
+			for(var i = 0; i < $scope.contacts.length; i++){
+				if($scope.contacts[i].iIDContacto == id){
+					$scope.contacts[i].delleting = true;
+				}
+			}
+
 			dataService.getData({
 				action : 'deleteContact',
 				msgId : id
 			}).then(function(data){
 				if(data == 1){ $scope.getMessages(); }
 			});
+		}
+
+		$scope.getDate = function(time){
+			var date = new Date(time*1000);
+			return date.getDay()+'/'+(date.getMonth()+1)+'/'+date.getFullYear() +' - '+ date.getHours()+':'+date.getMinutes();
 		}
 
     }]);
