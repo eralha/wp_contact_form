@@ -154,8 +154,8 @@ if (!class_exists("er_base_plugin")){
 				$responseHTML .= "<script>window.nonces = ".$this->generateNonces().";</script>";
 
 				$responseHTML .= "<script src='".plugins_url( '', __FILE__ )."/js/libs/angular.min.js'></script>";
-				$responseHTML .= "<script src='".plugins_url( '', __FILE__ )."/js/src/modules/validators/angular__validators.js'></script>";
-				$responseHTML .= "<script src='".plugins_url( '', __FILE__ )."/js/src/modules/angular/backend.js'></script>";
+				$responseHTML .= "<script src='".plugins_url( '', __FILE__ )."/js/src/modules/validators/angular__validators.js?v=1'></script>";
+				$responseHTML .= "<script src='".plugins_url( '', __FILE__ )."/js/src/modules/angular/backend.js?v=1'></script>";
 			}
 
 			echo $responseHTML;
@@ -190,8 +190,8 @@ if (!class_exists("er_base_plugin")){
 
 					$responseHTML .= "<script src='".plugins_url( '', __FILE__ )."/js/libs/jquery-1.9.1.min.js'></script>";
 					$responseHTML .= "<script src='".plugins_url( '', __FILE__ )."/js/libs/angular.min.js'></script>";
-					$responseHTML .= "<script src='".plugins_url( '', __FILE__ )."/js/src/modules/validators/angular__validators.js'></script>";
-					$responseHTML .= "<script src='".plugins_url( '', __FILE__ )."/js/src/modules/angular/fontend.js'></script>";
+					$responseHTML .= "<script src='".plugins_url( '', __FILE__ )."/js/src/modules/validators/angular__validators.js?v=1'></script>";
+					$responseHTML .= "<script src='".plugins_url( '', __FILE__ )."/js/src/modules/angular/fontend.js?v=1'></script>";
 
 
 				//$content = str_replace("[er_form_contactos]", $responseHTML, $content);
