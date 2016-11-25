@@ -1,27 +1,43 @@
 <div>
 
 	<style type="text/css">
+	  select,
+	  textarea,
+	  input[type="text"],
+	  input[type="email"] {
+	  	width: 100%;
+	  	height: 40px;
+	  	margin-bottom: 20px;
+	  }
       select,
-      input[type="email"] {
-        height: 40px;
-      	margin-bottom: 20px;
-	    padding-top: 12px;
-	    padding-bottom: 12px;
-        background: transparent;
-        border: 1px solid #e4e4e4;
-        width: 100%;
-        padding: 10px;
-        color: #888;
-        font-size: 12px;
-        outline: none;
+	  textarea,
+	  input[type="text"],
+	  input[type="email"] {
+        height: 40px !important;
+      	margin-bottom: 20px !important;
+	    padding-top: 12px !important;
+	    padding-bottom: 12px !important;
+        background: transparent !important;
+        border: 1px solid #c9c9c9 !important;
+        width: 100% !important;
+        padding: 10px !important;
+        color: #888 !important;
+        font-size: 12px !important;
+        outline: none !important;
+        -webkit-box-sizing: border-box;
+		  -moz-box-sizing: border-box;
+		  box-sizing: border-box;  
       }
-      input[type="email"] { margin-left: -2px; }
       input.error,
       select.error,
       textarea.error {
-      	background-color: #ffd1d1;
-      	border-color: #f6a3a3;
-      	color: #fff;
+      	background-color: #ffd1d1 !important;
+      	border-color: #f6a3a3 !important;
+      	color: #fff !important;
+      }
+
+      textarea {
+      	height: 150px !important;
       }
     </style>
 
@@ -49,8 +65,8 @@
 	      <div class="text-email">
 	        <select id="assunto" name="assunto" field-validator="required" ng-model="assunto">
 	          <option value="">Assunto*...</option>
-	          <option value="Transformacoes">Transformações</option>
-	          <option value="Apoio Geral">Apoio Geral</option>
+	          <option value="Apoio Jurídico">Apoio Jurídico</option>
+	          <option value="Notariado">Notariado</option>
 	        </select>
 	      </div>
 	      <div class="text-comment">

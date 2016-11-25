@@ -28,11 +28,7 @@ if (!class_exists("er_base_plugin")){
 		}
 
 		function init(){
-			wp_register_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' );
-			wp_register_style( 'font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' );
 
-    		wp_enqueue_style( 'bootstrap' );
-    		wp_enqueue_style( 'font-awesome' );
 		}
 		function activationHandler(){
 			global $wpdb;
